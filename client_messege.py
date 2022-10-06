@@ -11,8 +11,8 @@ help_text = """
 class client_message():
 
     def send_message(self, info):
-        self.info_decode = info.encode('utf-8')
-        self.socket_file.send(self.info_decode)
+        self.info_encode = info.encode('utf-8')
+        self.socket_file.send(self.info_encode)
 
     def get_message(self, socket_file):
         self.message_file = socket_file.recv(4096).decode('utf-8')
@@ -23,7 +23,7 @@ class client_message():
         self.socket_file.connect((addr, host_l))
         print("If you write 'stop',  server will be stop")
         self.message = input("Write message: ")
-        self.send_json(self.message)
+        self.send_message(self.message)
         self.message_file = self.get_message(self.socket_file)
         print(f"Message from server:\n {self.message_file}")
         self.socket_file.close()
@@ -45,8 +45,9 @@ if __name__ == "__main__":
         if port_ == "-p":
             port_ = 7777
         # message = sys.argv[3]
-        cleint_connection = client_message(addr, int(port_))
+        
     except:
         raise ValueError(error_text)
+cleint_connection = client_message(addr, int(port_))
 
 
