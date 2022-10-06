@@ -37,7 +37,7 @@ class server():
             print(self.msg)
             self.send_messege(self.client, "Your" + self.msg)
             self.client.close()
-            if self.message_file_decode == "stop":
+            if self.message_file_decode == "-stop":
                 break
 
     def __init__(self, addr_argv, port_argv):

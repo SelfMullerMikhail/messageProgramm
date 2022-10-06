@@ -19,14 +19,18 @@ class client_message():
         return self.message_file
 
     def initialization(self, addr, host_l):
-        self.socket_file = socket(AF_INET, SOCK_STREAM)
-        self.socket_file.connect((addr, host_l))
-        print("If you write 'stop',  server will be stop")
-        self.message = input("Write message: ")
-        self.send_message(self.message)
-        self.message_file = self.get_message(self.socket_file)
-        print(f"Message from server:\n {self.message_file}")
-        self.socket_file.close()
+        while True:
+            self.socket_file = socket(AF_INET, SOCK_STREAM)
+            self.socket_file.connect((addr, host_l))
+            print("""If you write '-stop',  server will be stop\n
+            if '-stop_me', your connect will be destroyed""")
+            self.message = input("Write message: ")
+            self.send_message(self.message)
+            self.message_file = self.get_message(self.socket_file)
+            print(f"Message from server:\n {self.message_file}")
+            self.socket_file.close()
+            if self.message == "-stop_me":
+                break
 
 
     def __init__(self, addr, host_l):
@@ -44,10 +48,9 @@ if __name__ == "__main__":
         port_ = sys.argv[2]
         if port_ == "-p":
             port_ = 7777
-        # message = sys.argv[3]
-        
+        cleint_connection = client_message(addr, int(port_))
     except:
         raise ValueError(error_text)
-cleint_connection = client_message(addr, int(port_))
+
 
 
