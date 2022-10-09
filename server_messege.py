@@ -1,7 +1,9 @@
-from email.mime import message
-from msilib.schema import Error
-import sys
 from socket import *
+from common.json_form import *
+from common.utils import *
+from common.prepare_message_to_json import *
+import sys
+from common.variables import *
 
 error_text = "Write '-help'"
 help_text = """
@@ -11,16 +13,6 @@ help_text = """
 
 
 class server():
-
-# function for get and decoding message
-    def get_messege(self, client):
-        self.messege_file_decode = client.recv(1024).decode('utf-8')
-        return self.messege_file_decode
-
-# function for send and encoding message
-    def send_messege(self, client, message):
-        self.client = client
-        self.client.send(message.encode("utf-8"))
 
 # Шnitialization socket, bind, and start listen.
     def initialization_socket(self, addr_argv, port_argv):
@@ -32,17 +24,25 @@ class server():
     def while_server(self):
         while True:
             self.client, self.addr = self.socket_file.accept()
-            self.message_file_decode = self.get_messege(self.client)
-            self.msg = f"Message: {self.message_file_decode}\nfrom \n ip:{self.addr[0]}\n port: {self.addr[1]}"
+
+            self.message_file_decode = self.transaction.get_messege(self.client)
+            self.prepare_message_json_get = self.prepearing.get(self.message_file_decode)
+            self.message_get = self.prepare_message_json_get["message"]
+            self.msg = f"Message: {self.message_get}\nfrom \nip:{self.addr[0]}\nport: {self.addr[1]}"
             print(self.msg)
-            self.send_messege(self.client, "Your" + self.msg)
+
+            self.dict_form_message = json_message_server(f"Your ip: {self.addr[0]} \nYour port:{self.addr[1]}")
+            self.prepare_message_json_send = self.prepearing.send(self.dict_form_message)
+            self.transaction.send_messege(self.client, self.prepare_message_json_send)
             self.client.close()
-            if self.message_file_decode == "-stop":
+            if self.message_get == "-stop":
                 break
 
     def __init__(self, addr_argv, port_argv):
+        self.prepearing = Prepare_message_to_json()
+        self.transaction = Trasaction_Functions()
         self.initialization_socket(addr_argv, port_argv)
-        print("Server is started")
+        print("Server is started\n")
         self.while_server()
 
 
@@ -51,12 +51,13 @@ if __name__ == "__main__":
     try:
         addr_argv = sys.argv[1]
         if addr_argv == "-a":
-            addr_ = ""
+            addr_ = DEFAULT_IP_ADDRESS
         elif addr_argv == '-help': 
             raise ValueError(help_text)
         port_argv = sys.argv[2]
         if port_argv == "-p":
-            port_ = 7777
-        a = server(addr_, port_)
+            port_ = DEFAULT_PORT
+        
     except:
         raise ValueError(error_text)
+    a = server(addr_, port_)
