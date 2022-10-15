@@ -8,7 +8,8 @@ from common.variables import LOGGING_LEVEL
 
 
 # Create loger's maker
-SERVER_FORMATER = logging.Formatter('%(asctime)s %(levelname)s %(filename)s %(message)s')
+hey = "hey"
+SERVER_FORMATER = logging.Formatter(f'%(asctime)s %(levelname)s %(filename)s %(message)s')
 
 # Prepear name of file for loging
 PATH = os.path.dirname(os.path.abspath(__file__))
