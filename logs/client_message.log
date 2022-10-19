@@ -1,0 +1,140 @@
+2022-10-18 20:45:59,123 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-18 20:45:59,123 DEBUG client_messege.py Listener is started
+2022-10-18 20:45:59,124 DEBUG client_messege.py Writer is started
+2022-10-18 20:45:59,127 DEBUG client_messege.py Create listener socket: <socket.socket fd=756, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55125), raddr=('127.0.0.1', 8888)>
+2022-10-18 20:45:59,127 DEBUG client_messege.py Create echo cleint <socket.socket fd=756, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55125), raddr=('127.0.0.1', 8888)>
+2022-10-18 20:46:03,708 CRITICAL client_messege.py EXIT
+2022-10-19 14:42:46,706 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 14:42:46,708 DEBUG client_messege.py Listener is started
+2022-10-19 14:42:46,709 DEBUG client_messege.py Writer is started
+2022-10-19 14:42:46,714 DEBUG client_messege.py Create listener socket: <socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59063), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:42:46,714 DEBUG client_messege.py Create echo cleint <socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59063), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:43:08,702 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 14:43:08,703 DEBUG client_messege.py Listener is started
+2022-10-19 14:43:08,704 DEBUG client_messege.py Writer is started
+2022-10-19 14:43:08,708 DEBUG client_messege.py Create echo cleint <socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59065), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:43:08,709 DEBUG client_messege.py Create listener socket: <socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59065), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:43:22,534 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 14:43:22,535 DEBUG client_messege.py Listener is started
+2022-10-19 14:43:22,536 DEBUG client_messege.py Writer is started
+2022-10-19 14:43:22,541 DEBUG client_messege.py Create echo cleint <socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59070), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:43:22,542 DEBUG client_messege.py Create listener socket: <socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59070), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:43:27,878 CRITICAL client_messege.py EXIT
+2022-10-19 14:43:35,038 CRITICAL client_messege.py EXIT
+2022-10-19 14:47:20,245 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 14:47:20,246 DEBUG client_messege.py Listener is started
+2022-10-19 14:47:20,246 DEBUG client_messege.py Writer is started
+2022-10-19 14:47:20,249 DEBUG client_messege.py Create listener socket: <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59126), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:47:20,249 DEBUG client_messege.py Create echo cleint <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59126), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:47:22,417 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 14:47:22,418 DEBUG client_messege.py Listener is started
+2022-10-19 14:47:22,418 DEBUG client_messege.py Writer is started
+2022-10-19 14:47:22,421 DEBUG client_messege.py Create echo cleint <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59129), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:47:22,422 DEBUG client_messege.py Create listener socket: <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59129), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:47:29,548 CRITICAL client_messege.py EXIT
+2022-10-19 14:48:56,174 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 14:48:56,175 DEBUG client_messege.py Listener is started
+2022-10-19 14:48:56,176 DEBUG client_messege.py Writer is started
+2022-10-19 14:48:56,178 DEBUG client_messege.py Create echo cleint <socket.socket fd=740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59153), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:48:56,178 DEBUG client_messege.py Create listener socket: <socket.socket fd=740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59153), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:50:10,850 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 14:50:10,851 DEBUG client_messege.py Listener is started
+2022-10-19 14:50:10,851 DEBUG client_messege.py Writer is started
+2022-10-19 14:50:10,855 DEBUG client_messege.py Create echo cleint <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59165), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:50:10,855 DEBUG client_messege.py Create listener socket: <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59165), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:50:32,635 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 14:50:32,636 DEBUG client_messege.py Listener is started
+2022-10-19 14:50:32,636 DEBUG client_messege.py Writer is started
+2022-10-19 14:50:32,639 DEBUG client_messege.py Create listener socket: <socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59170), raddr=('127.0.0.1', 8888)>
+2022-10-19 14:50:32,640 DEBUG client_messege.py Create echo cleint <socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59170), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:10:50,536 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:10:50,537 DEBUG client_messege.py Listener is started
+2022-10-19 15:10:50,537 DEBUG client_messege.py Writer is started
+2022-10-19 15:10:51,528 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:10:51,529 DEBUG client_messege.py Listener is started
+2022-10-19 15:10:51,530 DEBUG client_messege.py Writer is started
+2022-10-19 15:10:52,543 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:10:52,544 DEBUG client_messege.py Listener is started
+2022-10-19 15:10:52,544 DEBUG client_messege.py Writer is started
+2022-10-19 15:10:53,557 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:10:53,558 DEBUG client_messege.py Listener is started
+2022-10-19 15:10:53,558 DEBUG client_messege.py Writer is started
+2022-10-19 15:10:54,573 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:10:54,574 DEBUG client_messege.py Listener is started
+2022-10-19 15:10:54,575 DEBUG client_messege.py Writer is started
+2022-10-19 15:11:02,033 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:11:02,034 DEBUG client_messege.py Listener is started
+2022-10-19 15:11:02,035 DEBUG client_messege.py Writer is started
+2022-10-19 15:11:02,038 DEBUG client_messege.py Create listener socket: <socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59315), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:02,038 DEBUG client_messege.py Create echo cleint <socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59315), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:03,007 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:11:03,007 DEBUG client_messege.py Listener is started
+2022-10-19 15:11:03,008 DEBUG client_messege.py Writer is started
+2022-10-19 15:11:03,011 DEBUG client_messege.py Create listener socket: <socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59317), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:03,011 DEBUG client_messege.py Create echo cleint <socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59317), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:04,019 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:11:04,020 DEBUG client_messege.py Listener is started
+2022-10-19 15:11:04,020 DEBUG client_messege.py Writer is started
+2022-10-19 15:11:04,023 DEBUG client_messege.py Create listener socket: <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59319), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:04,023 DEBUG client_messege.py Create echo cleint <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59319), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:05,038 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:11:05,039 DEBUG client_messege.py Listener is started
+2022-10-19 15:11:05,039 DEBUG client_messege.py Writer is started
+2022-10-19 15:11:05,042 DEBUG client_messege.py Create listener socket: <socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59321), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:05,042 DEBUG client_messege.py Create echo cleint <socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59321), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:06,038 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:11:06,039 DEBUG client_messege.py Listener is started
+2022-10-19 15:11:06,040 DEBUG client_messege.py Writer is started
+2022-10-19 15:11:06,043 DEBUG client_messege.py Create listener socket: <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59322), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:06,043 DEBUG client_messege.py Create echo cleint <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59322), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:11:18,521 CRITICAL client_messege.py EXIT
+2022-10-19 15:12:46,684 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:12:46,685 DEBUG client_messege.py Listener is started
+2022-10-19 15:12:46,685 DEBUG client_messege.py Writer is started
+2022-10-19 15:12:46,688 DEBUG client_messege.py Create echo cleint <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59336), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:46,688 DEBUG client_messege.py Create listener socket: <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59336), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:47,670 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:12:47,672 DEBUG client_messege.py Listener is started
+2022-10-19 15:12:47,672 DEBUG client_messege.py Writer is started
+2022-10-19 15:12:47,675 DEBUG client_messege.py Create echo cleint <socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59337), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:47,675 DEBUG client_messege.py Create listener socket: <socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59337), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:48,681 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:12:48,682 DEBUG client_messege.py Listener is started
+2022-10-19 15:12:48,683 DEBUG client_messege.py Writer is started
+2022-10-19 15:12:48,686 DEBUG client_messege.py Create echo cleint <socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59339), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:48,686 DEBUG client_messege.py Create listener socket: <socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59339), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:49,712 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:12:49,714 DEBUG client_messege.py Listener is started
+2022-10-19 15:12:49,715 DEBUG client_messege.py Writer is started
+2022-10-19 15:12:49,718 DEBUG client_messege.py Create listener socket: <socket.socket fd=756, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59342), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:49,718 DEBUG client_messege.py Create echo cleint <socket.socket fd=756, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59342), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:50,709 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:12:50,709 DEBUG client_messege.py Listener is started
+2022-10-19 15:12:50,710 DEBUG client_messege.py Writer is started
+2022-10-19 15:12:50,717 DEBUG client_messege.py Create echo cleint <socket.socket fd=704, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59344), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:12:50,717 DEBUG client_messege.py Create listener socket: <socket.socket fd=704, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59344), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:25,347 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:14:25,349 DEBUG client_messege.py Listener is started
+2022-10-19 15:14:25,349 DEBUG client_messege.py Writer is started
+2022-10-19 15:14:25,352 DEBUG client_messege.py Create echo cleint <socket.socket fd=752, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59353), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:25,352 DEBUG client_messege.py Create listener socket: <socket.socket fd=752, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59353), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:26,325 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:14:26,328 DEBUG client_messege.py Listener is started
+2022-10-19 15:14:26,328 DEBUG client_messege.py Writer is started
+2022-10-19 15:14:26,332 DEBUG client_messege.py Create echo cleint <socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59355), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:26,332 DEBUG client_messege.py Create listener socket: <socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59355), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:27,343 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:14:27,346 DEBUG client_messege.py Listener is started
+2022-10-19 15:14:27,346 DEBUG client_messege.py Writer is started
+2022-10-19 15:14:27,349 DEBUG client_messege.py Create echo cleint <socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59357), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:27,349 DEBUG client_messege.py Create listener socket: <socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59357), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:28,350 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:14:28,351 DEBUG client_messege.py Listener is started
+2022-10-19 15:14:28,351 DEBUG client_messege.py Writer is started
+2022-10-19 15:14:28,354 DEBUG client_messege.py Create listener socket: <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59360), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:28,354 DEBUG client_messege.py Create echo cleint <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59360), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:29,367 DEBUG client_messege.py Got info: ('localhost', 8888)
+2022-10-19 15:14:29,368 DEBUG client_messege.py Listener is started
+2022-10-19 15:14:29,369 DEBUG client_messege.py Writer is started
+2022-10-19 15:14:29,372 DEBUG client_messege.py Create listener socket: <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59362), raddr=('127.0.0.1', 8888)>
+2022-10-19 15:14:29,372 DEBUG client_messege.py Create echo cleint <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59362), raddr=('127.0.0.1', 8888)>
