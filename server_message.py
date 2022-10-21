@@ -107,10 +107,7 @@ class server():
             sys.exit()
         self.SERVER_LOGGER.debug(f"Port: {port_argv} is open.\n Connection address: {addr_argv}")
         print("Server is started\n")
-        self.server = threading.Thread(target=self.while_server)
-        # self.server.daemon = True
-        self.server.start()
-        # self.while_server()
+        self.while_server()
 
 if __name__ == "__main__":
     try:
