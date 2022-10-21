@@ -9,3 +9,4 @@
 2022-10-21 21:42:59,529 DEBUG server_message.py Start server
 2022-10-21 21:43:03,620 DEBUG server_message.py New connection ('127.0.0.1', 60040)
 2022-10-21 21:43:07,192 INFO server_message.py Message: {<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60040)>: 'hey'}
+2022-10-21 21:43:09,243 DEBUG server_message.py Client (read) 440 ('127.0.0.1', 60040) disconnected
