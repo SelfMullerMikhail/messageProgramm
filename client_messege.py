@@ -1,5 +1,7 @@
+from concurrent.futures import thread
 from ctypes import WinError
 from socket import socket, AF_INET, SOCK_STREAM
+import threading
 from common.variables import *
 import sys
 from logs.logs_code.decoration import func_checker
@@ -11,65 +13,49 @@ function will start with DEFAULT_ARGUMENTS (ip = '', port = 8888)"""
 
 
 class client_message():
-    def write_message(self, obj):
-        # Не придумал я как нормально реализовать нормальный выход(
-        if obj == self.counter:
-            self.msg = input()
-            if self.msg == "Exit":
-                self.counter - 0 
-            return self.msg
-        if obj == self.counter:
-            return "Exit"
-        
-
-
-
     @func_checker
-    def echo_client_writer(self):
+    def server_wrtiter(self):
+        while True:
+            try:
+                self.msg_input = input(" ")
+                if self.msg_input == "Exit":
+                    self.CLIENT_LOGGER.debug("Exit")
+                    self.sock.close()
+                    break
+                self.sock.send(self.msg_input.encode(ENCODING))
+                self.CLIENT_LOGGER.info(f"Message send: {self.msg_input}")
+            except:
+                self.CLIENT_LOGGER.critical("Error connection")
+                self.sock.close() 
+                raise ConnectionError("Server is closed")
+    @func_checker
+    def server_listener(self):
+        while True:     
+            try:
+                self.server_msg_get = self.sock.recv(1024).decode(ENCODING)
+            except:
+                self.CLIENT_LOGGER.critical("Error connection")
+                self.sock.close()
+                raise ConnectionError("Server is closed")
+            else:
+                if self.server_msg_get:
+                    print(self.server_msg_get)
+                    self.CLIENT_LOGGER.info(f"Message got: {self.server_msg_get}")
+    @func_checker
+    def client_start(self):
         with socket(AF_INET, SOCK_STREAM) as self.sock:
             self.sock.connect(self.ADDRESS)
             self.CLIENT_LOGGER.debug(f"Create echo cleint {self.sock}")
-            while True:     
-                self.msg = self.write_message(1)
-                if self.msg == "Exit":
-                    self.CLIENT_LOGGER.critical("EXIT")
-                    # break
-                    sys.exit()
-                try:
-                    self.sock.send(self.msg.encode(ENCODING))
-                except:
-                    raise WinError("Server disconnect")
-
-    @func_checker
-    def echo_client_listener(self):
-        with socket(AF_INET, SOCK_STREAM) as self.sock:
-            self.sock.connect(self.ADDRESS)
-            self.CLIENT_LOGGER.debug(f"Create listener socket: {self.sock}")
-            while True:
-                self.msg = self.write_message(0)
-                if self.msg == "Exit:":
-                    # break
-                    sys.exit()
-                try:
-                    self.data = self.sock.recv(1024).decode(ENCODING)
-                    if self.data:
-                        print(f"\n{self.data}")
-                except:
-                    raise WinError("Server disconnect")
+            writer_thread = threading.Thread(target=self.server_wrtiter)
+            writer_thread.start()
+            self.server_listener()
 
     @func_checker
     def __init__(self, addr=DEFAULT_LOCAL_ADRESS, host_l=DEFAULT_PORT):
         self.ADDRESS = (addr, host_l)
         self.CLIENT_LOGGER = logging.getLogger("client_message")
-        self.counter = 1
-
-        self.CLIENT_LOGGER.debug(f"Got info: {self.ADDRESS}") 
-        self.echo_listener = Thread(target=self.echo_client_listener)
-        self.echo = Thread(target=self.echo_client_writer)
-        self.echo_listener.start()
-        self.CLIENT_LOGGER.debug("Listener is started")
-        self.CLIENT_LOGGER.debug("Writer is started")
-        self.echo.start()
+        self.CLIENT_LOGGER.debug(f"Got address: {self.ADDRESS}")
+        self.client_start()
 
 
 

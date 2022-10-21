@@ -1,6 +1,5 @@
 import sys, os, logging, logging.handlers
 from functools import wraps
-from tkinter import W
 
 from logs.logs_code.get_way import get_way
 sys.path.append(os.path.join('..', os.getcwd()))
