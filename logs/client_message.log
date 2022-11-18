@@ -1,0 +1,6 @@
+2022-10-21 21:42:30,698 DEBUG client_messege.py Got address: ('localhost', 8888)
+2022-10-21 21:43:03,615 DEBUG client_messege.py Got address: ('localhost', 8888)
+2022-10-21 21:43:03,620 DEBUG client_messege.py Create echo cleint <socket.socket fd=324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60040), raddr=('127.0.0.1', 8888)>
+2022-10-21 21:43:06,752 INFO client_messege.py Message send: hey
+2022-10-21 21:43:07,197 INFO client_messege.py Message got: ('127.0.0.1', 60040): hey
+2022-10-21 21:43:09,067 CRITICAL client_messege.py Error connection

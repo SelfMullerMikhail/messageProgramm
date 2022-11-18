@@ -2,24 +2,26 @@ import sys
 import os
 import logging
 import logging.handlers
+
+from logs.logs_code.get_way import get_way
 sys.path.append(os.path.join('..', os.getcwd()))
-from common.variables import LOGGING_LEVEL
+from common.variables import ENCODING, LOGGING_LEVEL
 
 
 
 # Create loger's maker
-hey = "hey"
 SERVER_FORMATER = logging.Formatter(f'%(asctime)s %(levelname)s %(filename)s %(message)s')
 
 # Prepear name of file for loging
-PATH = os.path.dirname(os.path.abspath(__file__))
-PATH = os.path.join(PATH, "server_message.log")
+way = get_way(__file__, 2)
+# PATH = os.path.dirname(os.path.abspath(__file__))
+PATH = os.path.join(way, "server_message.log")
 
 # Create lines for the return logs
 STREAM_HANDLER = logging.StreamHandler(sys.stderr)
 STREAM_HANDLER.setFormatter(SERVER_FORMATER)
 STREAM_HANDLER.setLevel(logging.ERROR)
-LOG_FILE = logging.handlers.TimedRotatingFileHandler(PATH, encoding="utf-8", interval=1, when="D")
+LOG_FILE = logging.handlers.TimedRotatingFileHandler(PATH, encoding=ENCODING, interval=1, when="D")
 LOG_FILE.setFormatter(SERVER_FORMATER)
 
 # Create register and setting it

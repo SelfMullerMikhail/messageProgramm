@@ -1,0 +1,25 @@
+2022-10-21 21:42:24,286 DEBUG server_message.py Port: 8888 is open.
+ Connection address: 
+2022-10-21 21:42:24,289 DEBUG server_message.py Start server
+2022-10-21 21:42:42,397 DEBUG server_message.py Port: 8888 is open.
+ Connection address: 
+2022-10-21 21:42:42,399 DEBUG server_message.py Start server
+2022-10-21 21:42:59,524 DEBUG server_message.py Port: 8888 is open.
+ Connection address: 
+2022-10-21 21:42:59,529 DEBUG server_message.py Start server
+2022-10-21 21:43:03,620 DEBUG server_message.py New connection ('127.0.0.1', 60040)
+2022-10-21 21:43:07,192 INFO server_message.py Message: {<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60040)>: 'hey'}
+2022-10-21 21:43:09,243 DEBUG server_message.py Client (read) 440 ('127.0.0.1', 60040) disconnected
+2022-10-21 21:50:54,864 DEBUG server_message.py Port: 8888 is open.
+ Connection address: 
+2022-10-21 21:51:45,404 DEBUG server_message.py Port: 8888 is open.
+ Connection address: 
+2022-10-21 21:52:24,275 DEBUG server_message.py Port: 8888 is open.
+ Connection address: 
+2022-10-21 21:52:24,277 DEBUG server_message.py Start server
+2022-10-21 22:29:23,934 DEBUG server_message.py Port: 8888 is open.
+ Connection address: 
+2022-10-21 22:29:23,936 DEBUG server_message.py Start server
+2022-10-21 22:29:45,879 DEBUG server_message.py Port: 8888 is open.
+ Connection address: 
+2022-10-21 22:29:45,880 DEBUG server_message.py Start server

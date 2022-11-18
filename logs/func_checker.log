@@ -1,0 +1,30 @@
+2022-10-21 21:42:24,286 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x000001F48826BDF0>, ('', 8888))
+2022-10-21 21:42:42,397 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x000001B48BA8BDF0>, ('', 8888))
+2022-10-21 21:42:59,523 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x0000024D79FFBE20>, ('', 8888))
+2022-10-21 21:43:07,196 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x0000024D79FFBE20>, ('', 8888))
+2022-10-21 21:43:07,196 
+action: write_requests. from: a. 
+args:(<__main__.server object at 0x0000024D79FFBE20>, {<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60040)>: 'hey'}, [<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60040)>], [<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60040)>], {"['60040']": <socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 60040)>})
+2022-10-21 21:50:54,863 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x0000029C9AC3BFA0>, ('', 8888))
+2022-10-21 21:51:45,404 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x000001E5D8FABFA0>, ('', 8888))
+2022-10-21 21:52:24,275 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x000001E3A600BFA0>, ('', 8888))
+2022-10-21 22:29:23,934 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x000002AF0F7BBFA0>, ('', 8888))
+2022-10-21 22:29:45,879 
+action: add_connection. from: i. 
+args:(<__main__.server object at 0x000002030C17BCD0>, ('', 8888))

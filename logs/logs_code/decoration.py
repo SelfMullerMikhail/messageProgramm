@@ -1,22 +1,24 @@
 import sys, os, logging, logging.handlers
 from functools import wraps
-from tkinter import W
+
+from logs.logs_code.get_way import get_way
 sys.path.append(os.path.join('..', os.getcwd()))
-from common.variables import LOGGING_LEVEL
+from common.variables import ENCODING, LOGGING_LEVEL
 
 def loggin_function(name_first_function, name_function,  args):
     # Create loger's maker
     SERVER_FORMATER = logging.Formatter(f"%(asctime)5s \naction: {name_function}. from: {name_first_function}. \nargs:{args}")
     
+    way = get_way(__file__, 2)
     # Prepear name of file for loging
-    PATH = os.path.dirname(os.path.abspath(__file__))
-    PATH = os.path.join(PATH, "func_checker.log")
+    # PATH = os.path.dirname(os.path.abspath(__file__))
+    PATH = os.path.join(way, "func_checker.log")
 
     # Create lines for the return logs
     STREAM_HANDLER = logging.StreamHandler(sys.stderr)
     STREAM_HANDLER.setFormatter(SERVER_FORMATER)
     STREAM_HANDLER.setLevel(logging.ERROR)
-    LOG_FILE = logging.handlers.TimedRotatingFileHandler(PATH, encoding="utf-8", interval=1, when="D")
+    LOG_FILE = logging.handlers.TimedRotatingFileHandler(PATH, encoding=ENCODING, interval=1, when="D")
     LOG_FILE.setFormatter(SERVER_FORMATER)
 
     # Create register and setting it
@@ -27,10 +29,8 @@ def loggin_function(name_first_function, name_function,  args):
 
 
 def func_checker(func):    
-    # name_first_function = func.__name__
-    @wraps(func) # Не понимаю почему, но декоратор здсь роли не играет(
-    def decorate_finction(self, *args):
-        main_function = func(self, *args) 
+    def decorate_finction(*args):
+        main_function = func(*args) 
         name_function = func.__name__
         name_first_function = list(func.__globals__)[-1]
         loggin_function(name_first_function, name_function, args)
